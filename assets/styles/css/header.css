@@ -1,0 +1,167 @@
+/* Sommmaire 
+
+
+
+1: Bouton Mobile
+2: Humberger
+3: Animation pour le bouton hamburger
+4: Navtext
+5: Navbar box shadow
+
+
+
+
+
+ -------- */
+
+
+
+/* Bouton Mobile */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #f8f9fa;
+        padding: 1rem;
+        z-index: 1500;
+        /* Ajout d'une transition plus fluide */
+        transform-origin: top;
+        transition: transform 0.3s ease-out;
+    }
+
+    .navbar-collapse.collapsing {
+        transform: scaleY(0);
+    }
+
+    .navbar-collapse.show {
+        transform: scaleY(1);
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .nav-link {
+        padding: 0.5rem 0;
+    }
+}
+
+/* Hamburger */
+.hamburger {
+    margin-top: 12px;
+}
+
+.navbar-toggler {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding-bottom: 35px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(263deg, rgba(252,74,74,1) 0%, rgb(29, 29, 29) 100%);
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    /* Optimisation des transitions */
+    transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
+    will-change: transform, opacity;
+}
+
+.top-bar {
+    transform: translateY(0);
+}
+
+.middle-bar {
+    transform: translateY(7px);
+}
+
+.bottom-bar {
+    transform: translateY(14px);
+}
+
+/* Animation optimisée pour le bouton hamburger */
+.navbar-toggler:not(.collapsed) .top-bar {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.navbar-toggler:not(.collapsed) .middle-bar {
+    opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) .bottom-bar {
+    transform: translateY(7px) rotate(-45deg);
+}
+
+/* Nav text */
+.navtext {
+    font-size: 16px;
+    margin-left: 18px;
+    color: black;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom-color 0.3s ease;
+}
+
+.navtext:hover {
+    border-bottom-color: red;
+}
+
+@media (max-width: 991px) {
+    .navtext {
+        margin-left: 0;
+        transition: none;
+    }
+    
+    .navtext:hover {
+        border-bottom: 1px solid red;
+        width: 30%;
+        margin: auto;
+    }
+}
+
+/* Navbar box shadow */
+.navbar {
+    box-shadow: 
+        0 1px 1px rgba(0, 0, 0, 0.05),
+        0 2px 2px rgba(0, 0, 0, 0.05),
+        0 4px 4px rgba(0, 0, 0, 0.05),
+        0 8px 8px rgba(0, 0, 0, 0.05),
+        0 16px 16px rgba(0, 0, 0, 0.05);
+}
+
+/* Mon CV */
+
+
+.moncv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(337, 93%, 35%);
+    border-radius: 6px;
+    color: #fff;
+    margin-left: 10px;
+    text-decoration: none;
+  }
+
+.moncv:hover{
+    color: #fff;
+    opacity: 0.9;
+}
+  

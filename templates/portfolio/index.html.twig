@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Portfolio - Thibaut Foulon{% endblock %}
+
+{% block body %}
+
+
+<div class="container mt-2 mb-4 block1">
+    <div class="row">
+        <title>Thibaut Foulon</title>
+        <meta name="profil" content="Foulon Thibaut Développeur web - Web Mobile"/>
+        <div class="col-md-12 text-center">
+            <h1 class="fw-bold titreblock1">Salut ! <br>Je suis Thibaut Foulon</h1>
+            <i class="fa-solid fa-hand-holding-heart fa-beat fa-2xl ftwblock1" style="color: #fa2a05;"></i>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid containerblock2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-4 bg-block2 colimgblock2">
+                <img src="{{asset('divers/images/Khylz.png')}}" class="imgblock2 w-100" alt="Photo de profil de Thibaut Foulon">
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-4 block2 border">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2 class="titreblock2">Mon histoire</h2>
+                    </div>
+                    <div class="col-lg-12">
+                        <p class="parahistoire">
+                            Salut ! Je me présente, ancien cuisinier reconverti dans le monde du web. 
+                            Je suis actuellement en Licence CDA à Ekod, au Mans. Je suis passionné par le développement et toujours prêt à apprendre ! Je souhaite poursuivre en Master après ma Licence. 
+                            J'adore le sport et les jeux vidéo, et j'ai commencé à coder sur Minecraft et GTA RP.
+                        </p>
+                    </div>
+                    <div class="col-lg-12">
+                        <a class="buttoncontact" href="{{ path('app_contact') }}">Me contacter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
+
+
+

@@ -1,0 +1,185 @@
+/* Sommmaire 
+
+
+1: Block1
+2: Image et Background block1
+3: Block 2
+
+
+
+ -------- */
+ 
+
+body {
+    background: linear-gradient(135deg, #FFE6F0 0%, #FFF 100%);
+    font-family: 'Arial', sans-serif;
+}
+
+
+ /* Block  1 */
+
+ .block1{
+    transition: 200ms;
+  }
+ 
+ 
+  .block1:hover{
+    transform: scale(1.05);
+  }
+ 
+  .titreblock1{
+    font-size: 45px;
+    transition: 200ms;
+    color: rgb(62, 55, 55);
+  }
+ 
+  .ftwblock1{
+    font-size: 35px;
+  }
+ 
+  
+ /* Image et Background block1 */
+ 
+ .colimgblock2{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ .imgblock2{
+   object-fit: cover;
+   border-radius: 50px;
+ }
+ 
+ .bg-block2 {
+    background-image: url('/divers/images/fondblock1.jpg'); /* Chemin d'accès à l'image */
+    background-size: cover; /* Couvre tout l'élément */
+    background-position: center; /* Centre l'image */
+    border-radius: 65% 35% 100% 0% / 52% 44% 56% 48%      ;
+ }
+ 
+ .margintopblock2{
+   margin-top: 60px;
+ }
+  
+ 
+ 
+ 
+  /* Block 2 */
+ 
+  .containerblock2{
+   padding: 15px;
+  }
+ 
+ 
+  .block2{
+   border-radius: 1% 99% 14% 86% / 99% 7% 93% 1%     ;
+   box-shadow: 
+      1px 1px 2px rgba(0, 0, 0, 0.03),
+      2px 2px 4px rgba(0, 0, 0, 0.03),
+      3px 3px 6px rgba(0, 0, 0, 0.03),
+      4px 4px 8px rgba(0, 0, 0, 0.03),
+      5px 5px 10px rgba(0, 0, 0, 0.03);
+  }
+ 
+  .titreblock2{
+    font-size: 35px;
+  }
+ 
+ 
+  .parahistoire{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-size: 24px;
+  }
+ 
+ 
+ 
+ .buttoncontact {
+   appearance: none;
+   background-color: hsl(337, 93%, 35%);
+   border: 1px solid rgba(27, 31, 35, .15);
+   border-radius: 6px;
+   box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+   box-sizing: border-box;
+   color: #fff;
+   cursor: pointer;
+   display: inline-block;
+   font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+   font-size: 16px;
+   font-weight: 600;
+   line-height: 20px;
+   padding: 10px 19px;
+   position: relative;
+   text-align: center;
+   text-decoration: none;
+   user-select: none;
+   -webkit-user-select: none;
+   touch-action: manipulation;
+   vertical-align: middle;
+   white-space: nowrap;
+ }
+ 
+ .buttoncontact:focus:not(:focus-visible):not(.focus-visible) {
+   box-shadow: none;
+   outline: none;
+ }
+ 
+ .buttoncontact:hover {
+   background-color: hsl(337, 69%, 40%);
+ }
+ 
+ .buttoncontact:focus {
+   box-shadow: hsl(337, 93%, 35%);
+   outline: none;
+ }
+ 
+ .buttoncontact:disabled {
+   background-color: hsl(337, 93%, 35%);
+   border-color: rgba(27, 31, 35, .1);
+   color: rgba(255, 255, 255, .8);
+   cursor: default;
+ }
+ 
+ .buttoncontact:active {
+   background-color: hsl(337, 93%, 35%);
+   box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+   opacity: 0.9;
+ }
+ 
+ 
+ @media (max-width: 991px) {
+   .colimgblock2 {
+     margin-bottom: 50px;
+   }
+   .parahistoire {
+     font-size: 20px;
+   }
+   .titreblock2{
+     font-size: 32px;
+   }
+ }
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

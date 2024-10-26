@@ -1,0 +1,169 @@
+/* Sommmaire 
+
+
+1: Card
+2: Image et Background block1
+3: Block 2
+
+
+
+ -------- */
+
+ /* Card */
+
+.card{
+   height: 100%; 
+   transition: 200ms;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(188, 34, 34, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, #e0196f2b 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card:hover{
+    transform: scale(1.05)
+}
+
+
+.margintop-renault{
+    margin-top: 23px;
+}
+
+
+.blockimagebtnprofil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blockimgcv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cvprofil{
+    width: 300px;
+    border: solid 1px rgb(199, 199, 199);
+}
+
+/* Boutton download */
+
+
+
+.buttondownload {
+    appearance: none;
+    background-color: hsl(337, 93%, 35%);
+    border: 1px solid rgba(27, 31, 35, .15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 11px 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  
+  .buttondownload:hover{
+    opacity: 0.9;
+  }
+  
+  .buttondownload:focus:not(:focus-visible):not(.focus-visible) {
+    box-shadow: none;
+    outline: none;
+  }
+  
+  
+  .buttondownload:focus {
+    box-shadow: hsl(337, 93%, 35%);
+    outline: none;
+  }
+  
+  .buttondownload:disabled {
+    background-color: hsl(337, 93%, 35%);
+    border-color: rgba(27, 31, 35, .1);
+    color: rgba(255, 255, 255, .8);
+    cursor: default;
+  }
+  
+  .buttondownload:active {
+    background-color: hsl(337, 93%, 35%);
+    box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+    opacity: 0.9;
+    
+  }
+
+  /* Point Profil*/
+
+.point-profil {
+    width: 15px;
+    height: 15px;
+    background-color: hsl(337, 93%, 35%);
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    animation: blink 1s infinite alternate;
+    cursor: none; 
+}
+
+.point-profil:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.point-profil:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+
+.point-profil-gris {
+    width: 15px;
+    height: 15px;
+    background-color: hsl(330, 2%, 58%);
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    animation: blink 1s infinite alternate;
+    cursor: none; 
+}
+
+@media (max-width: 768px){
+    .blockimgcv{
+        margin-top: 50px;
+    }
+    .actu{
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px){
+    .blockimgcv{
+        margin-bottom: 15px;
+    }
+}
+
+
+
+

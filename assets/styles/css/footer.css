@@ -1,0 +1,18 @@
+
+/* Sommmaire 
+
+
+
+2: Margin top footer
+
+
+ -------- */
+
+
+ /* Margin top footer */
+ 
+.marginfooter{
+    margin-top: 40px;
+    border-top: solid 1px rgb(231, 231, 231);
+    padding-top: 35px;
+}

@@ -1,0 +1,56 @@
+/* Sommmaire 
+
+
+1: Block avec titre et paragraphe
+2: Progress bar
+3: cv skill
+4: Boutton download
+
+
+
+ -------- */
+
+ /* Block avec titre et paragraphe */
+
+ .title{
+    font-size: 45px;
+    font-weight: bold;
+    transition: 200ms;
+   
+ }
+
+ .title:hover{
+    transform: scale(1.05);
+ }
+
+ .skillpara{
+    font-size: 20px;
+ }
+
+
+ /* Progress Bar */
+
+ .grostitrecp {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+
+.skill-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    
+}
+.skill-bar {
+    height: 0.65rem;
+    margin-bottom: 1rem;
+}
+
+
+.progress-color{
+    background-color: rgb(86, 11, 64);
+}
+
+

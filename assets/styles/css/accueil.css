@@ -11,165 +11,118 @@
  
 
 body {
-    background: linear-gradient(135deg, #FFE6F0 0%, #FFF 100%);
-    font-family: 'Arial', sans-serif;
+  background-image: url('/divers/images/fondblock1.jpg'); /* Chemin d'accès à l'image */
+  background-size: cover; /* Couvre tout l'élément */
+}
+
+.hero-section {
+  padding: 100px 0;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.profile-image {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.social-icons a {
+  color: #333;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: color 0.3s;
 }
 
 
- /* Block  1 */
+.service-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 15px 0;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  height: 100%;
+}
 
- .block1{
-    transition: 200ms;
-  }
- 
- 
-  .block1:hover{
-    transform: scale(1.05);
-  }
- 
-  .titreblock1{
-    font-size: 45px;
-    transition: 200ms;
-    color: rgb(62, 55, 55);
-  }
- 
-  .ftwblock1{
-    font-size: 35px;
-  }
- 
-  
- /* Image et Background block1 */
- 
- .colimgblock2{
-   display: flex;
-   justify-content: center;
-   align-items: center;
- }
- .imgblock2{
-   object-fit: cover;
-   border-radius: 50px;
- }
- 
- .bg-block2 {
-    background-image: url('/divers/images/fondblock1.jpg'); /* Chemin d'accès à l'image */
-    background-size: cover; /* Couvre tout l'élément */
-    background-position: center; /* Centre l'image */
-    border-radius: 65% 35% 100% 0% / 52% 44% 56% 48%      ;
- }
- 
- .margintopblock2{
-   margin-top: 60px;
- }
-  
- 
- 
- 
-  /* Block 2 */
- 
-  .containerblock2{
-   padding: 15px;
-  }
- 
- 
-  .block2{
-   border-radius: 1% 99% 14% 86% / 99% 7% 93% 1%     ;
-   box-shadow: 
-      1px 1px 2px rgba(0, 0, 0, 0.03),
-      2px 2px 4px rgba(0, 0, 0, 0.03),
-      3px 3px 6px rgba(0, 0, 0, 0.03),
-      4px 4px 8px rgba(0, 0, 0, 0.03),
-      5px 5px 10px rgba(0, 0, 0, 0.03);
-  }
- 
-  .titreblock2{
-    font-size: 35px;
-  }
- 
- 
-  .parahistoire{
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
-    font-size: 24px;
-  }
- 
- 
- 
- .buttoncontact {
-   appearance: none;
-   background-color: hsl(337, 93%, 35%);
-   border: 1px solid rgba(27, 31, 35, .15);
-   border-radius: 6px;
-   box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
-   box-sizing: border-box;
-   color: #fff;
-   cursor: pointer;
-   display: inline-block;
-   font-family: -apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
-   font-size: 16px;
-   font-weight: 600;
-   line-height: 20px;
-   padding: 10px 19px;
-   position: relative;
-   text-align: center;
-   text-decoration: none;
-   user-select: none;
-   -webkit-user-select: none;
-   touch-action: manipulation;
-   vertical-align: middle;
-   white-space: nowrap;
- }
- 
- .buttoncontact:focus:not(:focus-visible):not(.focus-visible) {
-   box-shadow: none;
-   outline: none;
- }
- 
- .buttoncontact:hover {
-   background-color: hsl(337, 69%, 40%);
- }
- 
- .buttoncontact:focus {
-   box-shadow: hsl(337, 93%, 35%);
-   outline: none;
- }
- 
- .buttoncontact:disabled {
-   background-color: hsl(337, 93%, 35%);
-   border-color: rgba(27, 31, 35, .1);
-   color: rgba(255, 255, 255, .8);
-   cursor: default;
- }
- 
- .buttoncontact:active {
-   background-color: hsl(337, 93%, 35%);
-   box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
-   opacity: 0.9;
- }
- 
- 
- @media (max-width: 991px) {
-   .colimgblock2 {
-     margin-bottom: 50px;
-   }
-   .parahistoire {
-     font-size: 20px;
-   }
-   .titreblock2{
-     font-size: 32px;
-   }
- }
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.btn-custom {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 30px;
+  border-radius: 25px;
+  border: none;
+  transition: all 0.3s;
+}
+
+.btn-custom:hover {
+  background-color: #d81544;
+  transform: scale(1.05);
+  color: white;
+}
+
+.progress.skill-bar {
+  position: relative;
+  height: 10px;
+  width: 100%;
+  border-radius: 2px;
+  background: #e5e7eb;
+  margin: 15px 0;  /* Ajout de marge pour éviter que le point ne soit coupé */
+}
+
+.progress-bar.progress-color {
+  background: rgb(255, 0, 85);
+  position: relative;
+  height: 100%;
+  border-radius: 2px;
+}
+
+/* Point blanc avec effet 3D */
+.progress-bar.progress-color::after {
+  content: '';
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);  /* Ombre plus prononcée */
+  border: 2px solid rgba(255, 255, 255, 0.9); /* Bordure subtile */
+  z-index: 2;  /* Assure que le point reste au-dessus */
+}
+
+/* Pseudo-élément pour créer un effet d'ombre sous la barre */
+.progress.skill-bar::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 2px;
+  transform: translateY(2px);
+  z-index: 1;
+}
 
 
 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+
+.bgcontactbtn{
+  background-color: #d81544;
+}
  
  
  

@@ -39,7 +39,7 @@ class ContactController extends AbstractController
             // Ajouter un message flash
             $this->addFlash('success', 'Votre message a été envoyé avec succès. 🎉');
 
-            // Rediriger après la soumission pour éviter la soumission multiple
+            // Rediriger après la soumission pour éviterr la soumission multiple
             return $this->redirectToRoute('app_contact');
         }
 

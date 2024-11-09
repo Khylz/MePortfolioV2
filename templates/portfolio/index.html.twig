@@ -5,47 +5,127 @@
 {% block body %}
 
 
-<div class="container mt-2 mb-4 block1">
-    <div class="row">
-        <title>Thibaut Foulon</title>
-        <meta name="profil" content="Foulon Thibaut Développeur web - Web Mobile"/>
-        <div class="col-md-12 text-center">
-            <h1 class="fw-bold titreblock1">Salut ! <br>Je suis Thibaut Foulon</h1>
-            <i class="fa-solid fa-hand-holding-heart fa-beat fa-2xl ftwblock1" style="color: #fa2a05;"></i>
-        </div>
-    </div>
-</div>
-
-
-<div class="container-fluid containerblock2">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-1"></div>
-            <div class="col-lg-4 bg-block2 colimgblock2">
-                <img src="{{asset('divers/images/Khylz.png')}}" class="imgblock2 w-100" alt="Photo de profil de Thibaut Foulon">
-            </div>
-            <div class="col-lg-1"></div>
-            <div class="col-lg-4 block2 border">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h2 class="titreblock2">Mon histoire</h2>
-                    </div>
-                    <div class="col-lg-12">
-                        <p class="parahistoire">
-                            Salut ! Je me présente, ancien cuisinier reconverti dans le monde du web. 
-                            Je suis actuellement en Licence CDA à Ekod, au Mans. Je suis passionné par le développement et toujours prêt à apprendre ! Je souhaite poursuivre en Master après ma Licence. 
-                            J'adore le sport et les jeux vidéo, et j'ai commencé à coder sur Minecraft et GTA RP.
-                        </p>
-                    </div>
-                    <div class="col-lg-12">
-                        <a class="buttoncontact" href="{{ path('app_contact') }}">Me contacter</a>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h4 class="mb-2">Je suis</h4>
+                    <h1 class="display-4 fw-bold mb-3">Thibaut FOULON</h1>
+                    <h2 class="display-6 mb-4">Développeur Web</h2>
+                    <p class="lead mb-4">Lorem ipsum dolor sit amet, consectetur. Tristique ornet sed massa nolo lectus netus in. Aliquet donec morbi convalles pretium.</p>
+                    <a href="{{ path('app_contact') }}" class="btn btn-custom bgcontactbtn">Contactez-moi</a>
+                </div>
+                <div class="col-md-6 text-center bgprofil">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img src="{{asset('divers/images/Khylz.png')}}" alt="Profile" class="profile-image img-fluid">
+                        </div>
+                        <div class="col-md-12 mt-2 social-icons">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2"></div>
         </div>
-    </div>
-</div>
+    </section>
+
+    <!-- About Section -->
+    <section>
+        <div class="container">
+            <h2 class="display-6">À propos de moi</h2>
+            <div class="row">
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <div class="row">
+                        <div class="col-md-12">
+                           
+                        </div>
+                        <div class="col-md-12 mt-5">
+                            <p class="lead">Développeur web passionné, spécialisé dans la création de sites modernes et performants. J'allie créativité et rigueur technique pour concevoir des expériences utilisateurs optimisées.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>BACK-END</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress skill-bar">
+                            <div class="progress-bar progress-color" role="progressbar" style="width: 35%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>FRONT-END</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress skill-bar">
+                            <div class="progress-bar progress-color" role="progressbar" style="width: 35%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Développement Applicatif</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress skill-bar">
+                            <div class="progress-bar progress-color" role="progressbar" style="width: 35%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>UI/UX</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress skill-bar">
+                            <div class="progress-bar progress-color" role="progressbar" style="width: 35%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="display-6 mb-5">Mes services</h2>
+            <p class="lead text-center mb-5">Création de sites web sur mesure, optimisés, conformes aux performances et l'expérience utilisateur. Développement de solutions innovantes et sécurisées, adaptées à vos besoins.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Dev web</h3>
+                        <p>Développement web, expert en sites modernes et performants.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>App Dev</h3>
+                        <p>Développement d'applications, spécialisé dans les solutions mobiles performantes et intuitives.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>Web Design</h3>
+                        <p>Design UI/UX, créativité et expérience utilisateur intuitives et efficaces.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
